@@ -1,0 +1,208 @@
+/* FormPages.css - Styles for individual form pages */
+
+.form-grid {
+  width: 100%;
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+  margin-bottom: 15px;
+}
+
+.grid-col {
+  position: relative;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Responsive grid columns */
+.grid-col-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+.grid-col-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+.grid-col-3 { flex: 0 0 25%; max-width: 25%; }
+.grid-col-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+.grid-col-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+.grid-col-6 { flex: 0 0 50%; max-width: 50%; }
+.grid-col-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+.grid-col-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+.grid-col-9 { flex: 0 0 75%; max-width: 75%; }
+.grid-col-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+.grid-col-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
+.grid-col-12 { flex: 0 0 100%; max-width: 100%; }
+
+/* Required field indicator */
+.required-mark {
+  color: #dc3545;
+  margin-left: 3px;
+}
+
+/* Section styles */
+.section-title {
+  font-size: 1.25rem;
+  background-color: #e9ecef;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #495057;
+  margin: 15px 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Table styles for some sections */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.data-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Textarea styles */
+.textarea-container {
+  margin-bottom: 15px;
+}
+
+.textarea-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.textarea-field {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.textarea-field:focus {
+  border-color: #0066cc;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid-col-6,
+  .grid-col-4,
+  .grid-col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .data-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* additions to FormPages.css */
+.field-number {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.section-subtitle {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 8px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.address-container, .contact-info-container {
+  width: 100%;
+}
+
+.address-header, .contact-header {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.address-fields, .contact-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.address-row, .contact-row {
+  display: flex;
+  gap: 10px;
+}
+
+.address-label, .contact-label {
+  min-width: 100px;
+  font-weight: normal;
+}
+
+.signature-container {
+  margin-top: 15px;
+}
+
+.signature-row {
+  display: flex;
+  gap: 20px;
+}
+
+.signature-col {
+  flex: 1;
+}
+
+.ca-personnel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.page-indicator {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  text-align: right;
+}
+
+.page-number {
+  font-weight: bold;
+}
+
+.version-number {
+  font-style: italic;
+  color: #666;
+}
